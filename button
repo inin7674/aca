@@ -1,0 +1,29 @@
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+
+// function click(good = boolean) {
+//   good = !good; //!good = true
+// }
+
+function App() {
+  // const [count, setCount] = useState(0);
+  const useState결과값 = useState(0);
+  const count = useState결과값[0];
+  const setCount = useState결과값[1];
+
+  const 좋아요카운트 = 2;
+  let like = false;
+
+  return (
+    <>
+    <h1>좋아요</h1>
+    <div>{like === false ? <button onClick={like = !like}> 👍 </button> : <button> 👎 </button>}</div>
+    {/* <button>👍</button> */}
+    
+    </>
+  );
+}
+
+export default App;
